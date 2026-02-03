@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+int main(){
+	int a,b,c;
+	cout<<"enter the age of 1st person :";
+	cin>>a;
+	cout<<"enter the age of 2nd person:";
+	cin>>b;
+	cout<<"enter the age of 3rd person:";
+	cin>>c;
+	if(a<b){
+	    if (a<c){
+	        cout<<a<<"is youngest";
+	    }
+	    else {
+	        cout<<c<<"is youngest";
+	    }
+	}
+	else {
+	    if(b<c){
+	        cout<<b<<"is youngest";
+	    }
+	        else cout<<c<<"is youngest";
+	}
+}
