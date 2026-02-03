@@ -1,0 +1,11 @@
+// to calculate area of a circle
+#include<iostream>
+using namespace std;
+int main(){
+    float r ;
+    cout<<"enter the value of radius :";
+    cin>>r;
+    cout<<"radius is "<< r <<endl;
+    cout<<"area of circle is "<<r*r*3.14;
+    
+    }
