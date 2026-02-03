@@ -1,0 +1,21 @@
+#include<iostream>
+using namespace std;
+int main(){
+	int x,y;
+	cout<<"enter the coardinate of x :";
+	cin>>x;
+	cout<<"enter the coardinate of y:";
+	cin>>y;
+	if (x>0){
+	    if(y>0){
+	        cout<<"points lying in 1st quadrant";
+	    }
+	    else cout<<"points lying in 4th quadrant";
+	}
+	else if (x<0){
+	    if(y>0){
+	        cout<<"points lying in 2nd quadrant";
+	    }
+	    else cout<<"points lying in 3rd quadrant";
+	}
+}
