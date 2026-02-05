@@ -1,0 +1,59 @@
+#include <iostream>
+using namespace std;
+float kgtog(float k){
+    return k*1000;
+}
+    
+float gtomg(float g){
+    return g*1000;
+}
+
+float gtokg(float gr){
+    return gr/1000;
+}
+
+float mgtog(float mg){
+    return mg/1000;
+}
+
+
+int main() {
+    cout<<"_____MASS UNIT CONVERTER_____\n";
+    while(true){
+        int ask;
+        cout<<"1.kg to gram conversion\n2.gram to miligram conversion\n3.gram to kg conversion\n4.miligram to gram conversion\n5.exit\nChoose option : ";
+        cin>>ask;
+        if(ask == 1){
+            float k;
+            cout<<"enter the value in kilogram : : ";
+            cin>>k;
+            cout<<kgtog(k)<<"g"<<endl;
+        }
+         else if(ask == 2){
+            float g;
+            cout<<"enter the value in gram : ";
+            cin>>g;
+            cout<<gtomg(g)<<"mg"<<endl;
+        }
+          else if(ask == 3){
+            float gr;
+            cout<<"enter the value in gram : ";
+            cin>>gr;
+            cout<<gtokg(gr)<<"kg"<<endl;
+        }
+       else if(ask == 4){
+            float mg;
+            cout<<"enter the value in miligram : ";
+            cin>>mg;
+            cout<<mgtog(mg)<<"g"<<endl;
+        }
+        else if (ask == 5){
+            cout<<"thank you"<<endl;
+            break;
+        }
+        else cout<<"invalid input"<<endl;
+        
+    }
+    
+    
+}
