@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+int main(){
+	int n;
+	cout<<"enter the length of array : ";
+	cin>>n;
+	int arr[n] ;
+	cout<<"enter all values : \n";
+	for(int i=0;i<n;i++){
+	    cin>>arr[i];
+	}
+	cout<<"your array\n";
+	for(int i=0;i<n;i++){
+	    cout<<arr[i]<<endl;
+	}
+	int sum = 0;
+	for(int i=0;i<n;i++){
+	    sum+= arr[i];
+	}
+	cout<<"sum of your array"<<endl<<sum;
+	
+}
