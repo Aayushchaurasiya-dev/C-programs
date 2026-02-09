@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+int main(){
+	int n;
+	cout<<"enter the length of array : ";
+	cin>>n;
+	int arr[n] ;
+	cout<<"enter all values : \n";
+	for(int i=0;i<n;i++){
+	    cin>>arr[i];
+	}
+	cout<<"your array\n";
+	for(int i=0;i<n;i++){
+	    cout<<arr[i]<<endl;
+	}
+	int mx = INT_MIN;
+	for(int i=0;i<n;i++){
+	  if(mx<arr[i]) mx = arr[i];
+	}
+	cout<<"maximum value of your array "<<endl<<mx<<endl;
+	
+		int mn =INT_MAX;
+	for(int i=0;i<n;i++){
+	  mn = min(mn,arr[i]);
+	}
+	cout<<"minimum value of your array "<<endl<<mn;
+}
